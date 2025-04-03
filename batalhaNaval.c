@@ -23,38 +23,38 @@ int main() {
     int i, j;
 
     //iniciando tabuleiro
-    for (int i = 0; i < LINHAS; i++) {
-        for (int j = 0; j < COLUNAS; j++) {
+    for (i = 0; i < LINHAS; i++) {
+        for (j = 0; j < COLUNAS; j++) {
             tabuleiro[i][j] = agua;
         }
     }
 
     //posiciona navio na horizontal
-    for (int i = 1; i < 2; i++)
+    for (i = 1; i < 2; i++)
     {
-        for (int j = 3; j < 6; j++)
+        for (j = 3; j < 6; j++)
         {
             tabuleiro[i][j]= navio;
         }
     }
 
     //posiciona navio na vertical
-    for (int i = 2; i < 5; i++)
+    for (i = 2; i < 5; i++)
     {
-        for (int j = 2; j < 3; j++)
+        for (j = 2; j < 3; j++)
         {
             tabuleiro[i][j]= navio;
         } 
     }
     
     //posiciona navio na diagonal principal
-    for (int i = 5; i < 8; i++)
+    for (i = 5; i < 8; i++)
     {
         tabuleiro [i][i] = navio;
     }
 
     //posiciona navio na diagonal secundaria
-    for (int i = 1; i < 4; i++)
+    for (i = 1; i < 4; i++)
     {
         tabuleiro [i][9 - i] = navio;
     }  
